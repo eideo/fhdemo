@@ -66,6 +66,20 @@
 					</li>
 					
 					
+					<li  class="grey">
+						
+						<select id="skin-colorpicker" class="hidden">
+							<option data-class="default" value="#438EB9"
+								<c:if test="${user.SKIN =='default' }">selected</c:if>>#438EB9</option>
+							<option data-class="skin-1" value="#222A2D"
+								<c:if test="${user.SKIN =='skin-1' }">selected</c:if>>#222A2D</option>
+							<option data-class="skin-2" value="#C6487E"
+								<c:if test="${user.SKIN =='skin-2' }">selected</c:if>>#C6487E</option>
+							<option data-class="skin-3" value="#D0D0D0"
+								<c:if test="${user.SKIN =='skin-3' }">selected</c:if>>#D0D0D0</option>
+						</select>
+					</li>
+					
 					
 					<li class="green">
 						<a href="javascript:alert('预留功能,待开发');" class="dropdown-toggle" data-toggle="dropdown">

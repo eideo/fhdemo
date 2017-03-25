@@ -373,7 +373,7 @@ public class LoginController extends BaseController {
 			map.put("adds", pd.getString("ADD_QX"));
 			map.put("dels", pd.getString("DEL_QX"));
 			map.put("edits", pd.getString("EDIT_QX"));
-			map.put("chas", pd.getString("CHA_QX"));
+			map. put("chas", pd.getString("CHA_QX"));
 			
 			//System.out.println(map);
 			
@@ -384,4 +384,9 @@ public class LoginController extends BaseController {
 		return map;
 	}
 	
+	
+	public static void main(String[] args) {
+		String passwd = new SimpleHash("SHA-1", "admin", "1").toString();
+		System.out.println(passwd);
+	}
 }

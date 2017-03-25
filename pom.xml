@@ -322,7 +322,18 @@
 		
 
 				
+		<dependency>
+		    <groupId>commons-lang</groupId>
+		    <artifactId>commons-lang</artifactId>
+		    <version>2.6</version>
+		</dependency>
+		<dependency>
+		    <groupId>net.sf.ezmorph</groupId>
+		    <artifactId>ezmorph</artifactId>
+		    <version>1.0.6</version>
+		</dependency>
 		
+				
 					
 				
 		

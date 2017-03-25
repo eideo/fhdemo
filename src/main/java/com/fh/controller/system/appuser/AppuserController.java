@@ -41,7 +41,7 @@ import com.fh.util.PageData;
  * @version
  */
 @Controller
-@RequestMapping(value="/happuser")
+@RequestMapping(value="/m")
 public class AppuserController extends BaseController {
 	
 	String menuUrl = "happuser/listUsers.do"; //菜单地址(权限用)

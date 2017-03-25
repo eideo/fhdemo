@@ -1,8 +1,10 @@
 $(function() {
 	if(typeof($.cookie('menusf')) == "undefined"){
-		$("#sidebar").attr("class","menu-min");
-	}else{
 		$("#sidebar").attr("class","");
+		
+	}else{
+		$("#sidebar").attr("class","menu-min");
+		
 	}
 });
 

@@ -9,6 +9,7 @@
 <html lang="en">
 	<head>
 	<base href="<%=basePath%>">
+	<%-- <%@ include file="/include/top.jsp" %> --%>
 	<!-- jsp文件头和头部 -->
 	<%@ include file="../admin/top.jsp"%> 
 	</head> 

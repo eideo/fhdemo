@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+ <classPathEntry location="D:\maven\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar" />
+	<context id="mysqlGenerator" targetRuntime="MyBatis3">
+		<plugin type="org.mybatis.generator.plugins.CaseInsensitiveLikePlugin"></plugin>
+		<!-- 取消注释 -->
+		<commentGenerator>
+			<property name="suppressDate" value="true" />
+			<property name="suppressAllComments" value="true" />
+		</commentGenerator>
+		<!-- 配置连接数据信息 -->
+		<jdbcConnection 
+			driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://localhost/numysql" 
+			userId="root"
+			password="root" />
+
+		<!-- 配置自动生成的Model的保存路径与其它参数 -->
+		<javaModelGenerator targetPackage="com.fh.entity.test"
+			targetProject="fhdemo\src\main\java">
+			<property name="enableSubPackages" value="false" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+
+		<!-- 配置自动生成的Mappper.xml映射的保存路径与其它参数 -->
+		<sqlMapGenerator targetPackage="mybatis.test"
+			targetProject="fhdemo\src\main\resources">
+			<property name="enableSubPackages" value="false" ></property>
+		</sqlMapGenerator>
+
+		<!-- 配置自动生成的Mappper.java接口的保存路径与其它参数 -->
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="com.fh.dao.test" targetProject="fhdemo\src\main\java">
+			<property name="enableSubPackages" value="false" />
+		</javaClientGenerator>
+
+		<!-- 生成表对应的操作与实体对象 -->
+		<table schema="" tableName="sys_user" domainObjectName="User" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="true" selectByExampleQueryId="false">
+			<!--<columnOverride column="id" javaType="Long" />-->
+		</table>
+	</context>
+</generatorConfiguration>
